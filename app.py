@@ -51,10 +51,12 @@ def index():
 
                         if codigo_de_producto == barcodeData:
                             print("lo hicimooooooooooos")
-                            return render_template("producto.html",imagen=imagen_de_producto, marca=marca_de_producto, material=material_de_producto)
+                            return render_template(url_for('vista3',material=material_de_producto, marca=marca_de_producto, imagen=imagen_de_producto))
+                            #return render_template("vista3.html",imagen=imagen_de_producto, marca=marca_de_producto, material=material_de_producto)
                         else:
                             # return redirect("vista4.html")
                             print("No hay")
+                            return render_template(url_for('vista4'))
                     # condicional que revise si barcodeData == "codigo de barras"
 
                 cv2.imshow('Frame', frame)
@@ -65,11 +67,16 @@ def index():
         barcodeData
         cap.release()
         cv2.destroyAllWindows() 
- return render_template('index.html')
+ return render_template('vista1.html')
 
 
+@app.route("/succes", methods=['GET'])
+def succes():
+    return render_template('vista3.html')
 
-
+@app.route("/error", methods=['GET', 'POST'])
+def error():
+    return render_template('vista4.html')
 
 
 '''
