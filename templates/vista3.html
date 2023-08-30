@@ -15,7 +15,7 @@
             <!-- div, representa un contenedor generico. Funciona como una caja en la que puedes poner otros elementos -->
             <div>
                 <!-- a, representa un hipervinculo, colocamos la ruta en el atributo href y entre comillas -->
-                <img src="/statics/logo_final.png" class=" scale-100 h-36 w-96 " src="" alt="">                
+                <img src="/static/image/logo_final.png" class=" scale-100 h-36 w-96 " src="" alt="">                
             </div>
         </nav>
     </header>
@@ -35,9 +35,7 @@
                 </div>
 
                 <div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
-                   <h1>
-                   {{imagen}}
-                   </h1>
+                    <img src="{{imagen}}" alt="">
     
                 </div>      
                 <div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
@@ -54,29 +52,28 @@
                 </div>
                
 
-                {% if {{ material }} == "plastico" %}                
+                {% if material == "plastico": %}                
                 
                     <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20botellas%20de%20plastico&rs=typed">
                 <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a> 
                 
 
-                {% elif {{material}} == "carton" %}
+                {% elif material == "carton": %}
                 <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20cajas%20de%20cereales&rs=typed">
                 <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
 
-                {% elif {{material}} == "lata" %}
+                {% elif material == "lata": %}
                 <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20latas&rs=typed">
                 <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
 
-                {% elif {{material}} == "lata_gaseosa" %}
+                {% elif material == "lata_gaseosa": %}
                 <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20latas%20de%20coca&rs=typed">
                 <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
 
-                {% elif {{material}} == "carton_lacteos" %}
+                {% elif material == "carton_lacteos": %}
                 <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20de%20carton%20de%20leche&rs=typed
                 ">
                 <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>             
-                {% else %}
                 
                 {% endif %}
                                        
