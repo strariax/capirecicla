@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<!-- body, es donde va todo lo que nosotros queremos que se muestre en la pagina -->
+<body class=" bg-[#B99470]">
+    <!-- header, representa un contenedor para contenido introductorio o un conjunto de enlaces de navegacion -->
+    <header>
+        <!-- nav, representa una sección de una página cuyo propósito es proporcionar enlaces de navegación -->
+        <nav class=" bg-[#F9EBC7] texto-xl  not-italic text-slate-200 flex justify-around items-center ">
+            <!-- div, representa un contenedor generico. Funciona como una caja en la que puedes poner otros elementos -->
+            <div>
+                <!-- a, representa un hipervinculo, colocamos la ruta en el atributo href y entre comillas -->
+                <img src="/statics/logo_final.png" class=" scale-100 h-36 w-96 " src="" alt="">                
+            </div>
+        </nav>
+    </header>
+    <!-- main, permite definir el contenido principal de mi pagina -->
+    <main>
+        <!-- section, permite dividir en secciones específicas el contenido principal-->
+        <section class="p-8 flex bg-[#B99470] justify-center items-center h-screen">
+            <!-- form representa un formulario que permite al usuario enviar información -->
+            <!-- form action es para nuestro compis del back, donde iria la ruta en donde se estarian procesando la info. Mehtod es el metodo de envio (post) -->
+            
+            <div class=" p-8 bg-lime-2003 w-96 h-5/6 flex flex-col justify-between" >
+
+                <div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
+                  <h1>
+                    Marca: {{marca}}
+                  </h1>
+                </div>
+
+                <div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
+                   <h1>
+                   {{imagen}}
+                   </h1>
+    
+                </div>      
+                <div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
+                 <h1>
+                    Material: {{material}}
+                 </h1>
+                </div> 
+
+                <div div class=" pb-8 w-96 h-5/6 flex flex-col justify-start text-[#FEFAE0]  not-italic font-bold font-sans">
+                    <h1>
+                        Recomendaciones:
+                    </h1>
+
+                </div>
+               
+
+                {% if {{material}} == "plastico" %}                
+                
+                    <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20botellas%20de%20plastico&rs=typed">
+                <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a> 
+                
+
+                {% if {{material}} == "carton" %}
+                <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20cajas%20de%20cereales&rs=typed">
+                <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
+
+                {% if {{material}} == "lata" %}
+                <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20latas&rs=typed">
+                <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
+
+                {% if {{material}} == "lata_gaseosa" %}
+                <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20con%20latas%20de%20coca&rs=typed">
+                <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>
+
+                {%i f{{material}} == "carton_lacteos" %}
+                <a href="https://www.pinterest.es/search/pins/?q=ideas%20de%20reciclaje%20de%20carton%20de%20leche&rs=typed
+                ">
+                <button class=" pb-8 w-96 h-5/6 justify-start text-[#FEFAE0]  not-italic font-bold font-sans" type="submit">Explorar Ideas</button></a>             
+
+                                       
+    
+    
+    
+            </div>
+        
+        </section>
+    </main>
+</body>
+</html>

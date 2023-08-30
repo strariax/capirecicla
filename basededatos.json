@@ -1,8 +1,7 @@
 {"producto": [
 
-   " {"marca":"Coca Cola", "imagen": "https://rb.gy/uqrp1", "material": "Plastico",  "tamaño": "500ml", "codigo_de_barras": "7840058000019"},
-    {"marca":"Coca Cola", "imagen": "https://rb.gy/uvpzj", "material": "Plastico",  "tamaño": "3 litros", "codigo_de_barras": "7840058007537"},
-    {"marca":"Lays", "imagen": "https://porter.com.py/image/cache/catalog/779/7790310/7790310981191-600x600.jpg.webp", "material": "Plastico metalizado", "codigo_de_barras": "7790310981191"},
-    {"marca":"Doritos", "imagen": "https://www.superseis.com.py/images/thumbs/0244090.png", "material": "Plastico metalizado", "codigo_de_barras": "7802000015632"},
-    {"marca":"Coca Cola", "imagen": "https://supermas.cdn1.dattamax.com/userfiles/images/productos/600/83935_resultado.jpg", "material": "Plastico",  "tamaño": "2 litros", "codigo_de_barras": "7840058007537"}
+    {"marca":"frugos del valle", "imagen": "https://supermas.cdn1.dattamax.com/userfiles/images/productos/600/96515.png", "material": "carton_lacteos", "codigo_de_barras": "7840058009326"},
+    {"marca":"De la costa", "imagen": "https://www.stock.com.py/images/thumbs/0178850.png", "material": "plastico", "codigo_de_barras": "7840981000049"},
+    {"marca":"Arcor", "imagen": "https://www.realonline.com.py/media/catalog/product/cache/3f15339c1db7f7a94f5f1d1b7cf2eabf/7/7/7790580717407.jpg", "material": "carton", "codigo_de_barras":"7790580717407" },
+    {"marca":"Coca Cola", "imagen": "https://porter.com.py/image/cache/catalog/779/7790895/7790895002748-700x700.jpg.webp", "material": "lata_gaseosa", "codigo_de_barras": "7790895002748"}
  ]}
